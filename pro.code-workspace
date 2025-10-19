@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"window.title": "Programmering - eksempler, guides og øvelser (${rootNameShort}::${activeRepositoryBranchName})",
+		"python.terminal.activateEnvInCurrentTerminal": true,
+		"editor.tabSize": 4,
+		"editor.indentSize": "tabSize",
+		"editor.insertSpaces": true,
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+		"git.enableSmartCommit": true,
+		"git.confirmSync": false
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.vscode-json",
+			"ms-vscode.vscode-markdown",
+			"eamodio.gitlens"
+		]
+	}
+}
