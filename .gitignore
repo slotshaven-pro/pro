@@ -3,3 +3,7 @@
 __pycache__
 .venv/
 
+# project files
+_prompts
+_drafts
+_concepts
