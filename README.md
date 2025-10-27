@@ -81,7 +81,7 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 - Returværdien None
 - Navngivne parametre
 - Positionelle parametre
-- Early return vs one exit point
+- Early return vs single return
 - Fleksible og vilkårlige argumenter: `(*args, **kwargs)`
 
 ## Iterativ udvikling og programudvikling
