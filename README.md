@@ -119,5 +119,5 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 - "this"
 - attributter
 - metoder
-- nedarving
+- nedarving (polymorfi)
 - overrides
