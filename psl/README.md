@@ -20,13 +20,13 @@ import requests
 from PIL import Image
 ```
 
-At lave sit eget bibliotek selv er lidt mere indviklet end et simpelt module.
+At lave sit eget bibliotek selv er lidt mere indviklet end et simpelt modul.
 
 ## Typer af moduler og biblioteker
 
 Der er grundlæggende tre slags:
 
-1. **Python Standard Library (PSL))** – følger med Python (f.eks. `random`, `math`, `datetime`)
+1. **Python Standard Library (PSL)** – følger med Python (f.eks. `random`, `math`, `datetime`)
 2. **Eksternt bibliotek** – tredjeparts-pakker, der installeres med `pip` (f.eks. `requests`, `Pillow`)
 3. **Eget modul eller bibliotek** – `my_library.py`
 
@@ -34,7 +34,7 @@ Det er vigtigt at kende forskellen på de forskellige typer biblioteker, fordi n
 
 ### Python Standard Library
 
-Bibliotekerne i **Python Standard Library** følger med Python når du installerer det. Det betyder:
+Bibliotekerne i PSL følger med Python-installationen. Det betyder:
 
 - Moduler som `random`, `math`, `os`, `datetime` osv. er klar til brug.
 - Du behøver ikke installere dem – du kan bare skrive `import random`.
