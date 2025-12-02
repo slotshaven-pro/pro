@@ -112,7 +112,7 @@ Her følger nogle eksempler. Kopier dem til en workbook eller en `.py` og test h
 
 ```python
 # Import file (own library)
-import my_module as my_module
+import my_module
 result = my_module.add_numbers(12, 17)
 
 # Import file with module alias ("mm")
