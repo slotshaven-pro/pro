@@ -17,7 +17,7 @@ def calculate_days():
 # Main window
 app = Window(themename="litera")
 app.title("Days Until")
-app.resizable(False, False)
+app.resizable(True, True)
 
 # Variables
 result_var = ttk.StringVar(value="")
