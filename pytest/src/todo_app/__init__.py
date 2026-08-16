@@ -1,2 +1,0 @@
-"""Todo app package."""
-
