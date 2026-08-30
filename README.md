@@ -9,6 +9,7 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 - VS Code
 - Python 3
 - Jupyter Notebooks
+- GitHub
 - Udvidelser (extensions) til VS Code
 - Eksekvering af python
 
@@ -39,7 +40,7 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 ## Strenge
 
 - Formatering og opbygning af strenge
-- funktionerpå strenge
+- funktioner på strenge
 - Brugerinput: input()
 
 ## Kontrolstrukturer
@@ -55,21 +56,19 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 
 ## Kollektioner (lister, arrays)
 
-- Egenskaber ved de fire typer af lister
-  - ordnet - uordnet
-  - unikke - duplikerede elementer
-  - uforanderlig (immutable) vs. foranderlig
-  - indeksbaseret - nøglebaseret - sæt
 - Liste (List) `['item1', 'item2']`
 - Dictionary (opslagsliste, ordbog) `{'key': 'value'}`
 - Tupel (Tuple) `('item1', 'item2')`
 - Sæt (Set) `{'item1', 'item2'}`
+- Egenskaber ved lister
+  - ordnet - uordnet
+  - unikke - duplikerede elementer
+  - uforanderlig (immutable) vs. foranderlig
+  - indeksbaseret - nøglebaseret - sæt
 
 - Gennemløb med for-in
 - slicing [:]
 - indeksering []
-- append() og remove()
-- Længde, sortering o.a.
 
 ## Funktioner()
 
@@ -79,20 +78,17 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 - Default-værdier
 - Returværdier (return)
 - Returværdien None
-- Navngivne parametre
-- Positionelle parametre
-- Early return vs single return
-- Fleksible og vilkårlige argumenter: `(*args, **kwargs)`
+- Navngivne og positionelle parametre
+- Parametre med `(*args, **kwargs)`
 
 ## Iterativ udvikling og programudvikling
 
 - Den iterative udvklingsproces
-- Design
-  - rutediagrammer
-  - pseudokode
+- Rutediagrammer
+- Pseudokode
 - Implementation
 - Test
-- Fejlretning
+- Fejlretning (debugging)
 - Vedligeholdelse
 - Dokumentation
 
@@ -106,7 +102,7 @@ Oversigten tager udgangspunkt i programmeringssproget Python.
 
 ## Advancerede begreber
 
-- Funktioner og rekursion
+- Rekursion
 - Polymorfi
 - Algoritmemønstre
 - Parametrisering/abstraktionsmekanismer
