@@ -1,6 +1,8 @@
 # Din egen machine learning-undersøgelse
 
-I denne notebook skal du gennemføre din egen machine learning-undersøgelse med et datasæt, du selv har valgt.
+I denne opgave skal du arbejde med et datasæt efter eget valg.
+
+(Brug fx kaggle eller `sklearn.datasets` til at finde et datasæt.)
 
 Du skal bruge arbejdsprocessen fra Digits-opgaven som model.
 Se [opgaven her](https://github.com/slotshaven-pro/pro/blob/main/data-science/datascience-digits.ipynb).
