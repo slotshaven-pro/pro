@@ -2,9 +2,9 @@
 
 ## Hvad er et modul?
 
-Et modul er den mindste kode-enhed i Python. Det kan være én enkelt `.py`-fil som indeholder funktioner, klasser, variabler osv.
+Et modul er den mindste kodeenhed i Python. Det er én enkelt `.py`-fil, som indeholder funktioner, klasser, variabler osv.
 
-Moduler skal _importeres_ med `import [filnavn]` (uden .py) før de kan bruges.
+Moduler skal _importeres_ med `import [filnavn]` (uden `.py`), før de kan bruges.
 
 ```python
 import my_library
@@ -20,7 +20,7 @@ import requests
 from PIL import Image
 ```
 
-At lave sit eget bibliotek selv er lidt mere indviklet end et simpelt modul.
+At lave sit eget bibliotek er lidt mere indviklet end at lave et simpelt modul.
 
 ## Typer af moduler og biblioteker
 
@@ -30,7 +30,7 @@ Der er grundlæggende tre slags:
 2. **Eksternt bibliotek** – tredjeparts-pakker, der installeres med `pip` (f.eks. `requests`, `Pillow`)
 3. **Eget modul eller bibliotek** – `my_library.py`
 
-Det er vigtigt at kende forskellen på de forskellige typer biblioteker, fordi nogle biblioteker skal _installeres_ med `pip install` før de kan importeres.
+Det er vigtigt at kende forskellen på de forskellige typer biblioteker, fordi nogle biblioteker skal _installeres_ med `pip install`, før de kan importeres.
 
 ### Python Standard Library
 
@@ -43,8 +43,7 @@ Det samme gælder dine egne moduler/pakker.
 
 ### Eksterne biblioteker
 
-Eksterne biblioteker "følger ikke med" Python - de skal installeres med `pip`.
-De skabt af andre udviklere (tredjepart) og ligger som pakker på _Python Package Index_ (PyPI).
+Eksterne biblioteker "følger ikke med" Python. De er skabt af andre udviklere (tredjepart) og ligger som pakker på _Python Package Index_ (PyPI).
 
 For at kunne bruge dem, skal du først installere dem med **`pip`**.
 
@@ -52,19 +51,21 @@ Eksempler:
 
 ```bash
 pip install requests
-pip install sqlite3
+pip install Pillow
 ```
 
 Efter installation kan de importeres ligesom andre moduler:
 
 ```python
 import requests
-import sqlite3
+from PIL import Image
 ```
+
+Bemærk: Navnet, du installerer med, er ikke altid det samme som navnet, du importerer. Pakken `Pillow` importeres f.eks. som `PIL`.
 
 ### Eget modul
 
-Så simpelt som at oprette en python-fil.
+Så simpelt som at oprette en Python-fil, f.eks. `my_module.py`, i samme mappe som dit program.
 
 ### Opsummering
 
@@ -76,9 +77,9 @@ Kort sagt:
 
 ## Hvordan finder Python dine pakker?
 
-Python leder efter moduler i din `sys.path` - den ser sådan ud:
+Python leder efter moduler i listen `sys.path` – i denne rækkefølge:
 
-```bash
+```text
 sys.path
 ├── Projektmappe
 ├── Virtuelt miljø (venv)
@@ -88,14 +89,14 @@ sys.path
 
 ## Syntaks
 
-Der er mange måder at importere pakker og moduler. To almindelige måder at gøre det på ses her:
+Der er mange måder at importere pakker og moduler på. To almindelige måder ses her:
 
 ```python
 import [module] # file, package
 from [module] import [name] # class, function, variable
 ```
 
-Den afgørende forskel er hvordan _namespaces_ (da. _virkefelter_) håndteres.
+Den afgørende forskel er, hvordan _namespaces_ (da. _navnerum_) håndteres.
 Bemærk forskellen i dette eksempel.
 
 ```python
@@ -106,9 +107,28 @@ from random import randint
 result = randint(0, 5)
 ```
 
+### Alias
+
+Med `as` kan du give et modul eller en funktion et andet (typisk kortere) navn:
+
+```python
+import [module] as [alias]
+from [module] import [name] as [alias]
+```
+
+Nogle biblioteker har faste aliasser, som næsten alle bruger:
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+import datetime as dt
+
+today = dt.date.today()
+```
+
 ## Eksempler
 
-Her følger nogle eksempler. Kopier dem til en workbook eller en `.py` og test hvordan de fungerer.
+Her følger nogle eksempler. Kopiér dem til en notebook eller en `.py`-fil, og test, hvordan de fungerer.
 
 ```python
 # Import file (own library)
