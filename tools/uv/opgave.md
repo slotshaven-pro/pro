@@ -14,7 +14,9 @@ uv init # vi behøver ikke navn i et eksisterende projekt.
 
 Bemærk, vi behøver ikke navn eller `no-package` i et eksisterende projekt.
 
-Importér Datetime til dit projekt.
+## Installer et modul
+
+Importér fx Datetime til dit projekt.
 
 ```python
 from datetime import datetime as dt
