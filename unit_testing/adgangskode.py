@@ -31,6 +31,14 @@ def er_staerk_adgangskode(kode):
 # Du skal selv læse outputtet og vurdere, om resultatet er rigtigt.
 
 if __name__ == "__main__":
-    tests = ["Hemmelig1", "Abcdefg1", "Abcdef1", "hemmelig1", "Hemmelig", "Hemm elig1", ""]
+    tests = [
+        "Hemmelig1",
+        "Abcdefg1",
+        "Abcdef1",
+        "hemmelig1",
+        "Hemmelig",
+        "Hemm elig1",
+        "",
+    ]
     for t in tests:
         print(f"{t!r:14} -> {er_staerk_adgangskode(t)}")

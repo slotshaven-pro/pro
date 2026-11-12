@@ -93,18 +93,14 @@ pytest adgangskode_pytest.py -v
 
 ## Grundlæggende pytest
 
-Installer pytest (én gang):
-
-```
-pip install pytest
-```
+Installer pytest i dit virtuelle miljø. 
 
 Reglerne er enkle:
 
 - Testfunktioner skal have et navn, der **starter med `test_`**.
 - Inde i testen bruger du helt almindelig `assert`.
 - Kør `pytest filnavn.py`. Med `-v` (verbose) ser du hver test for sig.
-- Kører du bare `pytest` uden filnavn, finder pytest selv alle filer, der hedder `test_*.py` eller `*_test.py`. (Derfor skal `adgangskode_pytest.py` køres med filnavn.)
+- Kører du bare `pytest` uden filnavn, finder pytest selv alle filer, der hedder `test_*.py` eller `*_test.py`.
 
 Output ser sådan ud:
 
@@ -151,7 +147,7 @@ Kort sagt: pytest giver et overblik over **alle** fejl på én gang og forklarer
 
 ## Øvelse: Er telefonnummeret gyldigt?
 
-I filen `telefonnummer.py` er der en funktion `valider_telefonnummer(nummer)`. Den returnerer en tuple med tre værdier:
+I filen `telefonnummer.py` er der en funktion `valider_telefonnummer()`. Den returnerer en tuple med tre værdier:
 
 ```python
 ok, besked, nummer = valider_telefonnummer("12 34 56 78")

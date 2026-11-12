@@ -112,19 +112,13 @@ Data bliver gemt som i formatet `json`.
 
 Tilføj nogle to funktioner til dit program som indlæser dine kontakter når programmet starter og gemmer dem når programmet afsluttes.
 
-
-
-
-
 **Bemærk:**
 
 - `with open(...)` sørger for, at filen automatisk bliver lukket igen.
 - `"w"` betyder *write* (overskriver filen), `"r"` betyder *read*.
 - `encoding="utf-8"` og `ensure_ascii=False` gør, at æ, ø og å gemmes korrekt.
-- `try/except FileNotFoundError` håndterer første gang programmet køres, hvor filen endnu ikke findes.
 
 **Ekstra:** Gem telefonbogen hver gang en kontakt tilføjes, så intet går tabt, hvis programmet går ned.
-
 
 ## Opgave. Validering af telefonnummer
 
